@@ -10,7 +10,6 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcon from "./modules/fetch-bitcon.js";
 
-
 initScrollSuave();
 initScrollAnimation();
 initAccordion();

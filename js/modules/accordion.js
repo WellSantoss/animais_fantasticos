@@ -4,18 +4,18 @@ export default function initAccordion() {
   );
   const activeClass = "ativo";
 
+  function activeAccordion() {
+    // Adiciona a classe ativo ao elemento selecionado
+    this.classList.toggle(activeClass);
+    // Adiciona a classe ativo ao elemento abaixo do elemento selecionado
+    this.nextElementSibling.classList.toggle(activeClass);
+  }
+
   // Se accordinList for true (diferente de vazio)
   if (accordionList.length) {
     // Adiciona a classe ativo ao primeiro dt e dd
     accordionList[0].classList.add(activeClass);
     accordionList[0].nextElementSibling.classList.add(activeClass);
-
-    function activeAccordion() {
-      // Adiciona a classe ativo ao elemento selecionado
-      this.classList.toggle(activeClass);
-      // Adiciona a classe ativo ao elemento abaixo do elemento selecionado
-      this.nextElementSibling.classList.toggle(activeClass);
-    }
 
     // Percorre os dt
     accordionList.forEach((item) => {
