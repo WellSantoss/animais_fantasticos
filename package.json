@@ -1,8 +1,6 @@
 {
-  "name": "3.-eslint",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
@@ -11,7 +9,6 @@
     "type": "git",
     "url": "git+https://github.com/WellSantoss/animais_fantasticos.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/WellSantoss/animais_fantasticos/issues"
