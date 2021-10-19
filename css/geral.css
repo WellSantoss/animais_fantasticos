@@ -214,7 +214,7 @@ body {
   }
 
   .grid-section h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .menu {
@@ -280,12 +280,18 @@ body {
 }
 
 [data-anime="accordion"] dt::after {
-  content: "⬎";
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url(../img/arrow-red.svg) no-repeat center center;
   margin-left: 10px;
+  transition: transform 0.3s;
 }
 
 [data-anime="accordion"] dt.ativo::after {
-  content: "⬏";
+  transform: rotate(-90deg);
+  content: "";
 }
 
 @keyframes slideDown {
@@ -311,8 +317,8 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-[data-semana]::after{
-  content: '';
+[data-semana]::after {
+  content: "";
   display: inline-block;
   width: 6px;
   height: 6px;
@@ -322,13 +328,20 @@ body {
   border: 2px solid #000;
 }
 
-[data-semana].aberto::after{
+[data-semana].aberto::after {
   background: #3f4;
 }
 
 .btc-preco {
   background: #3f4;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-weight: bold;
   border-radius: 2px;
+}
+
+.arrow-black {
+  background: url(../img/arrow-black.svg) no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
 }
